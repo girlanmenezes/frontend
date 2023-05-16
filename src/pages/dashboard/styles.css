@@ -1,0 +1,14 @@
+.link {
+    font-size: 13px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: #15237a;
+    font-family: Nunito, sans-serif;
+  }
