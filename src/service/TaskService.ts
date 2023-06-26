@@ -98,6 +98,8 @@ const executarTask= async(task)=> {
     });
 }
 
+
+
 const getAllTasks = async ()=> {
    const dados =await axios.get(URL+ 'robos/', {
       })

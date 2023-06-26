@@ -31,6 +31,31 @@ const getAllTasksExecution = async ()=> {
 return dados
 }
 
+
+const getAlldados = async ()=> {
+
+  const dados =await axios.get(URL+ 'dados/', {
+  })
+  .then(function (response) {
+    return response.data;
+  })
+  .catch(function (error) {
+
+  });
+return dados
+}
+
+const creatDados= async(dados)=> {
+
+  await axios.post(URL + 'dados/',dados
+    )
+    .then((response) => response)
+    .catch(function (error) {
+      
+    });
+}
+
+
 const getAllReportExecution = async ()=> {
 
   const dados =await axios.get(URL+ 'report/', {
@@ -86,6 +111,14 @@ const getReportExecution = async (name)=> {
 return dados
 }
 
+const putDados = async(dados, roboName)=> {
+  await axios.put(URL + 'dados/'+ roboName,dados
+    )
+    .then((response) => response)
+    .catch(function (error) {
+      
+    });
+}
 
 const getReport = async ()=> {
   const dados =await axios.request(config)
@@ -103,7 +136,10 @@ const TasksExecutionService = {
     getAllTasksExecution,
     getAllReportExecution,
     getReportExecution,
-    getReport
+    getReport,
+    getAlldados,
+    creatDados,
+    putDados
 
 };
 export default TasksExecutionService
