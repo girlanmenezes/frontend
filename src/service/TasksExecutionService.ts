@@ -12,8 +12,8 @@ let config = {
   'Content-Type': '*/*',
   'Accept': '*/*'},
   auth: {
-    username: 'girlan',
-    password: '11a87c8c0801c6e11ffdb54f730acf8914'
+    username: 'admin',
+    password: '115621a99ae85be6ccc018810debdf154c'
   }
 };
 
@@ -95,8 +95,8 @@ const getReportExecution = async (name)=> {
     'Content-Type': '*/*',
     'Accept': '*/*'},
     auth: {
-      username: 'girlan',
-      password: '11a87c8c0801c6e11ffdb54f730acf8914'
+      username: 'admin',
+      password: '115621a99ae85be6ccc018810debdf154c'
     }
   };
 
