@@ -6,7 +6,7 @@ const URL = process.env.REACT_APP_URL_BACKEND;
 let config = {
   method: 'post',
   maxBodyLength: Infinity,
-  url: 'http://localhost:8080/job/Robot/3/robot/report/report.html',
+  url: 'http://192.168.57.80:8080/job/Robot/3/robot/report/report.html',
   headers: {'X-Requested-With': 'XMLHttpRequest',
   'Access-Control-Allow-Origin': '*',
   'Content-Type': '*/*',
@@ -89,7 +89,7 @@ const getReportExecution = async (name)=> {
   let config2 = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: 'http://localhost:8080/job/'+name+'/api/json',
+    url: 'http://192.168.57.80:8080/job/'+name+'/api/json',
     headers: {'X-Requested-With': 'XMLHttpRequest',
     'Access-Control-Allow-Origin': '*',
     'Content-Type': '*/*',
