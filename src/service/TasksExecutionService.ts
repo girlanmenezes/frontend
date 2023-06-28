@@ -90,9 +90,6 @@ const getReportExecution = async (name)=> {
     method: 'get',
     maxBodyLength: Infinity,
     url: 'http://192.168.57.80:8080/job/'+name+'/api/json',
-    headers: {'X-Requested-With': 'XMLHttpRequest',
-    'Content-Type': '*/*',
-    'Accept': '*/*'},
     auth: {
       username: 'admin',
       password: '115621a99ae85be6ccc018810debdf154c'
