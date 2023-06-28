@@ -91,7 +91,6 @@ const getReportExecution = async (name)=> {
     maxBodyLength: Infinity,
     url: 'http://192.168.57.80:8080/job/'+name+'/api/json',
     headers: {'X-Requested-With': 'XMLHttpRequest',
-    'Access-Control-Allow-Origin': '*',
     'Content-Type': '*/*',
     'Accept': '*/*'},
     auth: {
@@ -99,7 +98,7 @@ const getReportExecution = async (name)=> {
       password: '115621a99ae85be6ccc018810debdf154c'
     }
   };
-
+  
   const dados =await axios.request(config2)
   .then(function (response) {
     return response.data;
