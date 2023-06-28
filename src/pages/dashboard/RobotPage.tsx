@@ -49,7 +49,7 @@ async function getReportFilter(value){
 
   const link = (getReports) => (
     <React.Fragment>
-       <a target="_blank" rel="noopener noreferrer" href={getReports.url+'/robot/report/report.html'} className='link'>Abrir</a>
+       <a target="_blank" rel="noopener noreferrer" href={getReports.url+'robot/report/log.html'} className='link'>Abrir</a>
     </React.Fragment>
   );
 
