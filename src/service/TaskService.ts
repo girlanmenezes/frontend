@@ -90,7 +90,7 @@ const deleteTaskApi= async (_id)=> {
 }
 
 const executarTask= async(task)=> {
-  await axios.post(URL + 'executar/',task
+   axios.post(URL + 'executar/',task
     )
     .then((response) => response)
     .catch(function (error) {
