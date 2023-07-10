@@ -69,6 +69,19 @@ const getAllReportExecution = async ()=> {
   console.log(dados)
 return dados
 }
+
+const getAtendimentoContaMensal= async ()=> {
+  const dados =await axios.get(URL+ 'atendimentoContaMensal/', {
+  })
+  .then(function (response) {
+    return response.data;
+  })
+  .catch(function (error) {
+    
+  });
+  console.log(dados)
+return dados
+}
 /*
 const getReportExecution = async (name)=> {
 
@@ -139,7 +152,8 @@ const TasksExecutionService = {
     getReport,
     getAlldados,
     creatDados,
-    putDados
+    putDados,
+    getAtendimentoContaMensal
 
 };
 export default TasksExecutionService

@@ -1,6 +1,7 @@
 import HomePage from "../pages/home/HomePage";
 import { RouteType } from "./config";
 import RobotPage from "../pages/dashboard/RobotPage";
+import Relatorio from "../pages/dashboard/Relatorio";
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
 import HomeIcon from '@mui/icons-material/Home';
@@ -21,7 +22,7 @@ const appRoutes: RouteType[] = [
     }
   },
   {
-    element:<RobotPage />,
+    element:<ComponentPageLayout />,
     state: "dashboard",
     sidebarProps: {
       displayText: "Dashboard",
@@ -35,15 +36,15 @@ const appRoutes: RouteType[] = [
         sidebarProps: {
           displayText: "Robot"
         },
-      }/*,
+      },
       {
-        path: "/dashboard/grafana",
-        element: <AnalyticsPage />,
-        state: "dashboard.grafana",
+        path: "/dashboard/report",
+        element: <Relatorio />,
+        state: "dashboard.repot",
         sidebarProps: {
-          displayText: "Grafana"
+          displayText: "Relatorio"
         }
-      }*/
+      }
     ]
   },
   {
