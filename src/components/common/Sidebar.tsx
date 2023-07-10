@@ -29,7 +29,7 @@ const Sidebar = () => {
             direction="row"
             justifyContent="center"
           >
-            <img src={assets.images.logo} style={{ width: 170, height: 56, marginTop: "10%"}} alt='some value'/>
+            <img src={assets.images.logo} style={{ width: 170, height: 56, marginTop: "10%"}} alt='MV'/>
           </Stack>
         </Toolbar>
         {appRoutes.map((route, index) => (
