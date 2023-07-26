@@ -42,7 +42,7 @@ const appRoutes: RouteType[] = [
         element: <Relatorio />,
         state: "dashboard.repot",
         sidebarProps: {
-          displayText: "Relatorio"
+          displayText: "Relatório"
         }
       }
     ]
