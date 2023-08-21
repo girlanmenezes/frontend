@@ -17,7 +17,7 @@ const appRoutes: RouteType[] = [
     element: <HomePage />,
     state: "home",
     sidebarProps: {
-      displayText: "HomePage",
+      displayText: "Página Inicial",
       icon: <HomeIcon />
     }
   },
@@ -25,7 +25,7 @@ const appRoutes: RouteType[] = [
     element:<ComponentPageLayout />,
     state: "dashboard",
     sidebarProps: {
-      displayText: "Dashboard",
+      displayText: "Relatório",
       icon: <DashboardOutlinedIcon />
     },
     child: [
@@ -34,7 +34,7 @@ const appRoutes: RouteType[] = [
         element: <RobotPage />,
         state: "dashboard.robot",
         sidebarProps: {
-          displayText: "Robot"
+          displayText: "Detalhado"
         },
       },
       {
@@ -42,7 +42,7 @@ const appRoutes: RouteType[] = [
         element: <Relatorio />,
         state: "dashboard.repot",
         sidebarProps: {
-          displayText: "Relatório"
+          displayText: "Sintético"
         }
       }
     ]
@@ -51,7 +51,7 @@ const appRoutes: RouteType[] = [
     element: <ComponentPageLayout />,
     state: "configuration",
     sidebarProps: {
-      displayText: "Configuration",
+      displayText: "Configuração",
       icon: <AppsOutlinedIcon />
     },
     child: [
@@ -60,7 +60,7 @@ const appRoutes: RouteType[] = [
         element: <TaskPage />,
         state: "configuration.task",
         sidebarProps: {
-          displayText: "Task"
+          displayText: "Robôs"
         },
       },
       {
