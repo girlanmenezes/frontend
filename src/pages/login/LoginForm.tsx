@@ -5,6 +5,7 @@ import { Toast } from 'primereact/toast';
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setCredentials } from '../../redux/features/authSlice'
+import assets from "../../assets";
 
 
 export default function LoginForm() {
@@ -41,8 +42,15 @@ export default function LoginForm() {
       <Toast ref={toast} />
       <div className="container-login">
         <div className="wrap-login">
+
+          
+            <img className= "img-logo" src={assets.images.pg}  alt='MV'/>
+          
+
           <form className="login-form" onSubmit={handleSubmit}>
-            <span className="login-form-title"> Bem vindo </span>
+            <div className="login-form-title">
+            <img src={assets.images.logow}  alt='WATI'/> 
+            </div>
             <div className="wrap-input">
               <input
                 className={usuario !== "" ? "has-val input" : "input"}
@@ -56,11 +64,11 @@ export default function LoginForm() {
             <div className="wrap-input">
               <input
                 className={password !== "" ? "has-val input" : "input"}
-                type="password"
+                type="Senha"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <span className="focus-input" data-placeholder="Password"></span>
+              <span className="focus-input" data-placeholder="Senha"></span>
             </div>
 
             <div className="container-login-form-btn">
