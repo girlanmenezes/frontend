@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.login-page {
+  background: #e7eaf6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #8f44fd, #a265fd);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.login-left h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.login-left p {
+  font-size: 16px;
+  max-width: 300px;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #8f44fd;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-options a {
+  color: #8f44fd;
+  text-decoration: none;
+}
+
+.login-btn {
+  background: linear-gradient(135deg, #8f44fd, #a265fd);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #7a38d0, #8e5de0);
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-footer a {
+  color: #8f44fd;
+  text-decoration: none;
+}

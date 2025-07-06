@@ -5,6 +5,12 @@ import { routes } from "./routes";
 import "primereact/resources/themes/lara-light-indigo/theme.css";     
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css"; 
+// Para Material UI
+import '@mui/material/styles';
+import '@mui/material/Typography';
+
+
+
 import PrivateRoutes from '../src/routes/PrivateRoutes'
 
 function App() {

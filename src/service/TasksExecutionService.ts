@@ -6,14 +6,14 @@ const URL = process.env.REACT_APP_URL_BACKEND;
 let config = {
   method: 'post',
   maxBodyLength: Infinity,
-  url: 'http://192.168.57.80:8080/job/Robot/3/robot/report/report.html',
+  url: 'http://localhost:8080/job/Mv%20Automação/2/robot/report/report.html',
   headers: {'X-Requested-With': 'XMLHttpRequest',
   'Access-Control-Allow-Origin': '*',
   'Content-Type': '*/*',
   'Accept': '*/*'},
   auth: {
     username: 'admin',
-    password: '115621a99ae85be6ccc018810debdf154c'
+    password: '11257010fbeddec38047789185dab5ced8'
   }
 };
 
@@ -114,14 +114,14 @@ const getReportExecution = async (name)=> {
   let config2 = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: 'http://192.168.57.80:8080/job/'+name+'/api/json',
+    url: 'http://localhost:8080/job/'+name+'/api/json',
     headers: {'X-Requested-With': 'XMLHttpRequest',
     'Access-Control-Allow-Origin': '*',
     'Content-Type': '*/*',
     'Accept': '*/*'},
     auth: {
       username: 'admin',
-      password: '115621a99ae85be6ccc018810debdf154c'
+      password: '11257010fbeddec38047789185dab5ced8'
     }
   };
   

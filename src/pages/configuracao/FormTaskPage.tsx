@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
@@ -28,6 +27,7 @@ interface Task {
     diasMes: string
     dias: number;
     semanas: string;
+    minutoHora: number;
 }
 
 export default function FormHome() {
@@ -297,6 +297,14 @@ export default function FormHome() {
                             )}
 
                         </>
+
+                        {/* Nova opção para execução de hora em hora */}
+                        {repeticao.code === "H" && (
+                            <div className="p-fluid" style={{ marginTop: '1em' }}>
+                                <label htmlFor="minutoHora" className="font-bold block mb-2">Minuto da hora para execução (0-59)</label>
+                                <InputNumber inputId="minutoHora" value={task.minutoHora} onChange={(e) => onInputNumberChange(e, 'minutoHora')} min={0} max={59} useGrouping={false} />
+                            </div>
+                        )}
 
                     </Fieldset>
                 </div>            

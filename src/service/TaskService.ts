@@ -139,6 +139,7 @@ const Erepeticao = [
     { name: 'Diariamente', code: 'D' },
     { name: 'Semanalmente', code: 'S' },
     { name: 'Mensalmente', code: 'M' },
+    { name: 'Hora em hora', code: 'H' },
     { name: 'Desabilitado', code: 'N' },
 ];
 
